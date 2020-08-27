@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files 
+
+Photo by Sergey Chetvertnykh from Pexels
+*/
+body {
+    background: url('src\assets\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
