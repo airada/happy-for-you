@@ -50,27 +50,40 @@
 
     <!-- Page Content -->
     <div class="container text-80">
-        <div class="card border-0 shadow my-5">
-            <div class="card-body p-5">
+        <div class="card border-0 shadow ">
+            <div class="card-body pt-1 mt-0">
+                <div class="row bg-light">
+                    <p>...</p>
+                </div>
                 <div class="row">
                     <div class="col-4">
-                        <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
-                        <p class="lead">In this snippet, the background image is fixed to the body element. Content on
-                            the page will scroll, but the image will remain in a fixed position!</p>
+                        <h1 class="font-weight-light">Welcome!</h1>
+                       
                         <p class="lead">Scroll down...</p>
-                        <div style="height: 200px"></div>
+                        <div style="height: 330px"></div>
                     </div>
                     <div class="col-8">
-                        <form id="chatbox" action="index.html" METHOD="GET">
-                            <div class="input-group">
-                                <input type="text" id="send-on-enter" class="form-control form-rounded"
-                                    placeholder="What did you do today?">
+                        <div id="chat_area" class="row bg-light" style="height: 90%;">
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-11 my-2">
+                                <form id="chat_box" action="index.html" METHOD="GET">
+                                    <div class="input-group" >
+                                        <input type="text" id="send-on-enter" class="form-control form-rounded"
+                                            placeholder="What did you do today?" >
+                                    </div>
+                            </form>
                             </div>
-                        </form>
+                            
+                            <div class="col-1 d-flex justify-content-end">
+                                <button class="btn"><i class="fas fa-microphone fa-2x"></i></button>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
