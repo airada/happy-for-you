@@ -1,0 +1,15 @@
+body {
+  background-color: lavenderblush;
+    /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; */
+  }
+  
+.text-80 {
+    font-size: 80%;
+}
+.form-rounded {
+    border-radius: 1rem;
+    }
