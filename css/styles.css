@@ -7,9 +7,63 @@ body {
     -o-background-size: cover; */
   }
   
+  .copyright {
+    display: block;
+  }
+
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+  }
+
+
 .text-80 {
     font-size: 80%;
 }
 .form-rounded {
     border-radius: 1rem;
     }
+
+.chat-area {
+  height: 90%; 
+  overflow-y:auto;
+}
+
+.chat-container{
+  height: 525px;
+}
+/* This media query works for medium screen devices (All devices with resolution from 992px to 1199px), for example Computers */
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .chat-container{
+    height: 525px;
+  }
+}
+
+/* This media query works for small screen devices (All devices with resolution from 768px to 991px), for example tablets */
+
+@media (min-width: 768px) and (max-width: 991px){
+  .chat-container{
+    height: 800px;
+  }
+}
+
+/* This media query works for extra small screen devices (All devices with below resolution of 767px), for example Iphones, Smart Phones */
+
+@media (max-width: 767px){
+  .chat-container{
+    height: 525px;
+  }
+}
+
+.bg-chatbot {
+  background-color: #c2bbc4;
+}
+
+.bg-user {
+  background-color:rgb(185, 165, 204);
+}
+
+.mw-custom {
+  max-width: 40% !important; /* or 950px */
+}
