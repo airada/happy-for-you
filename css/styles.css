@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  height: 100%;
 }
 body {
   position: relative;
