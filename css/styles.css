@@ -35,29 +35,42 @@ body {
 }
 
 .chat-container{
-  height: 525px;
+  height: 65vh;
 }
-/* This media query works for medium screen devices (All devices with resolution from 992px to 1199px), for example Computers */
 
-@media (min-width: 992px) and (max-width: 1199px){
+.chat-bg {
+  height: 60vh;
+}
+
+ @media (min-width: 992px) and (max-width: 1199px){
   .chat-container{
-    height: 525px;
+    height: 65vh;
+  }
+  
+  .chat-bg {
+    height: 60vh;
   }
 }
 
-/* This media query works for small screen devices (All devices with resolution from 768px to 991px), for example tablets */
 
 @media (min-width: 768px) and (max-width: 991px){
   .chat-container{
-    height: 750px;
+    height: 50vh;
+  }
+  
+  .chat-bg {
+    height: 45vh;
   }
 }
 
-/* This media query works for extra small screen devices (All devices with below resolution of 767px), for example Iphones, Smart Phones */
 
 @media (max-width: 767px){
   .chat-container{
-    height: 500px;
+    height: 40vh;
+  }
+  
+  .chat-bg {
+    height: 35vh;
   }
 }
 

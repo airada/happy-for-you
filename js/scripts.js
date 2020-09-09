@@ -37,6 +37,5 @@ function onSubmit(chatbox){
     user_reply(user_input);
 }
 
-console.log("new change is implemented");
 bot_reply("Hello! What's up?");
 chat_box.submit(onSubmit);
