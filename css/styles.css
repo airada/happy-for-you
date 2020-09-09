@@ -42,38 +42,6 @@ body {
   height: 60vh;
 }
 
- @media (min-width: 992px) and (max-width: 1199px){
-  .chat-container{
-    height: 65vh;
-  }
-  
-  .chat-bg {
-    height: 60vh;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px){
-  .chat-container{
-    height: 50vh;
-  }
-  
-  .chat-bg {
-    height: 45vh;
-  }
-}
-
-
-@media (max-width: 767px){
-  .chat-container{
-    height: 40vh;
-  }
-  
-  .chat-bg {
-    height: 35vh;
-  }
-}
-
 .bg-chatbot {
   background-color: #c2bbc4;
 }
