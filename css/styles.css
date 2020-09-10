@@ -31,17 +31,17 @@ body {
     }
 
 .chat-area {
-  height: 90%; 
+  height: 100%; 
   overflow-y:auto;
   max-height: 1500px;
 }
 
 .chat-container{
-  height: 55vh;
+  height: 60vh;
 }
 
 .chat-bg {
-  height: 50vh;
+  height: 55vh;
 }
 
 .bg-chatbot {
