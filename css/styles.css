@@ -3,7 +3,6 @@ html, body {
   width: 100%;
 }
 body {
-  position: fixed;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
