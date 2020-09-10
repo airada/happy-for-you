@@ -33,6 +33,7 @@ body {
 .chat-area {
   height: 90%; 
   overflow-y:auto;
+  max-height: 1500px;
 }
 
 .chat-container{
