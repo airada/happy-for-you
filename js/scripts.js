@@ -37,5 +37,15 @@ function onSubmit(chatbox){
     user_reply(user_input);
 }
 
+function first_row() {
+    let chat_area = jQuery("#chat_area");
+
+    let rowHTML = "";
+
+    rowHTML += "<div class='row' style='height:80%'></div>";
+    chat_area.append(rowHTML);
+}
+
+first_row();
 bot_reply("Hello! What's up?");
 chat_box.submit(onSubmit);
