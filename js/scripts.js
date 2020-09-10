@@ -46,6 +46,6 @@ function first_row() {
     chat_area.append(rowHTML);
 }
 
-first_row();
+// first_row();
 bot_reply("Hello! What's up?");
 chat_box.submit(onSubmit);
