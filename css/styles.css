@@ -1,10 +1,10 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 body {
   position: fixed;
+  overflow: hidden;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -36,11 +36,11 @@ body {
 }
 
 .chat-container{
-  height: 65vh;
+  height: 55vh;
 }
 
 .chat-bg {
-  height: 60vh;
+  height: 50vh;
 }
 
 .bg-chatbot {
