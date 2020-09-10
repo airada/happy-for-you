@@ -1,9 +1,10 @@
 html, body {
-  overflow-x: hidden;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 body {
-  position: relative;
+  position: fixed;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -52,4 +53,8 @@ body {
 
 .mw-custom {
   max-width: 75% !important; /* or 950px */
+}
+
+.top-bar {
+  height: 3vh;
 }
