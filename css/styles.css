@@ -1,5 +1,4 @@
 html, body {
-  overflow-x: hidden;
   height: 100%;
   width: 100%;
 }
@@ -31,7 +30,7 @@ body {
     }
 
 .chat-area {
-  height: 100%; 
+  height: 90%; 
   overflow-y: auto;
 }
 
