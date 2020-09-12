@@ -1,4 +1,10 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
+  position: relative;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -16,17 +22,12 @@ body {
     color: #fff;
   }
 
-
 .text-80 {
     font-size: 80%;
 }
+
 .form-rounded {
     border-radius: 1rem;
-    }
-
-.chat-area {
-  height: 90%; 
-  overflow-y: scroll;
 }
 
 .chat-container{
@@ -34,7 +35,8 @@ body {
 }
 
 .chat-bg {
-  height: 55vh;
+  height: 90%;
+  overflow-y: scroll;
 }
 
 .bg-chatbot {
