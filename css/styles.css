@@ -1,7 +1,3 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
 body {
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
@@ -30,6 +26,7 @@ body {
 
 .chat-area {
   height: 90%; 
+  overflow-y: scroll;
 }
 
 .chat-container{
