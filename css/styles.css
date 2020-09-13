@@ -4,7 +4,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  position: relative;
+  position: static;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
