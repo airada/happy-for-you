@@ -26,12 +26,12 @@ body {
 
 .chat-container{
   height: 60vh;
+  overflow: scroll;
 }
 
 .chat-bg {
   height: 95%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: scroll;
 }
 
 .textbox-container {
