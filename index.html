@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <title>Happy For You | Mimi AI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -50,37 +50,34 @@
 
     <!-- Page Content -->
     <div class="container text-80">
-        <div class="card border-0 shadow">
+        <div class="card border-0 mb-5 shadow">
             <div class="card-body pt-1 mt-0">
                 <div class="row bg-light">
                     <p class="top-bar"></p>
                 </div>
-                <div class="row">
+                <div class="row ">
 
                     <div class="col-lg-4 d-none d-lg-block">
                         <h1 class="font-weight-light">Welcome!</h1>
                     </div>
                     <!-- Chat Area -->
-                    <div class="col col-lg-8 chat-container">
+                    <div class="col col-lg-8  chat-container">
                         <div class="row bg-light chat-bg d-flex align-items-end" id="chat">
-                            <div id="chat_area" class="container " ></div>
-                        </div>
-
-                        <div class="row mt-3">
-                            <div class="col-10 col-lg-11">
-                                <form id="chat_box" action="#!">
-                                    <div class="input-group" >
-                                        <input type="text" id="send-on-enter" class="form-control form-rounded"
-                                            placeholder="What did you do today?" >
-                                    </div>
-                            </form>
+                                <div id="chat_area" class="container "></div>
                             </div>
-                            
-                            <div class="col-2 col-lg-1 d-flex justify-content-end">
-                                <button class="btn"><i class="fas fa-microphone fa-2x"></i></button>
-                            </div>
-                        </div>
                         
+                        <div class="row textbox-container d-flex align-items-center justify-content-center ">
+                            <div class="col-10">
+                                <form id="chat_box" action="#!">
+                                    <input type="text" id="send-on-enter" class="form-control form-rounded textbox"
+                                        placeholder="What did you do today?">
+                                </form>
+                            </div>
+
+                            <div class="col-2">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
