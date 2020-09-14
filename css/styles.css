@@ -4,6 +4,7 @@ html{
   position: fixed;
 }
 
+
 body {
   min-height:100%;
   min-width: 100%;
@@ -26,12 +27,12 @@ body {
 
 .chat-container{
   height: 60vh;
-  overflow: scroll;
 }
 
 .chat-bg {
   height: 95%;
-  overflow: scroll;
+  overflow: scroll !important;
+  z-index: 0 !important;
 }
 
 .textbox-container {
