@@ -26,12 +26,13 @@ body {
 }
 
 .chat-container{
-  height: 60vh;
+  height: 350px;
 }
 
 .chat-bg {
   height: 95%;
-  overflow: scroll !important;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
   z-index: 0 !important;
 }
 
