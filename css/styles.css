@@ -54,7 +54,7 @@ input.textbox {
 
 .size-custom {
   max-width: 75% !important; /* or 950px */
-  min-height: 20px
+  min-height: 100px;
 }
 
 .top-bar {
