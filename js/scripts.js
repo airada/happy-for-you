@@ -11,7 +11,7 @@ function bot_reply(input, first_msg = false){
     if (first_msg){
         rowHTML += "<div class='row mt-auto'>";
     } else {
-        rowHTML += "<div class='row'>";
+        rowHTML += "<div class='mb-4'></div><div class='row'>";
     }
     rowHTML += "<div class='col-12 pl-0 d-flex align-items-center justify-content-start text-center'>" +
     "<div class='px-2'><img src='./img/chatbot.png' alt'...' class='rounded-circle'></div>"+
@@ -25,7 +25,7 @@ function user_reply(input){
 
     let rowHTML = "";
 
-    rowHTML += "<div class='row'>" +
+    rowHTML += "<div class='mb-4'></div><div class='row'>" +
         "<div class='col-12 pr-0 d-flex align-items-center justify-content-end text-center'>" +
         "<p class='p-2 my-auto size-custom rounded text-white bg-user'>" + input + "</p>" +
         "<div class='px-2'><img src='./img/user.png' alt'...' class='rounded-circle'></div></div></div>" +
