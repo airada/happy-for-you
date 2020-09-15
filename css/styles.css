@@ -17,13 +17,14 @@ background-color: lavenderblush;
 
 .chat-container{
   height: 350px;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0 !important;
 }
 
 .chat-bg {
   height: 100%;
-  overflow-y: scroll !important;
-  -webkit-overflow-scrolling: touch;
-  z-index: 0 !important;
+  
 }
 
 .textbox-container {
