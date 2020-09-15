@@ -48,4 +48,19 @@ function first_row() {
 
 // first_row();
 bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+bot_reply("Hello! What's up?");
+
 chat_box.submit(onSubmit);
