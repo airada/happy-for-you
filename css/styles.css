@@ -16,8 +16,9 @@ background-color: lavenderblush;
 }
 
 .chat-container{
-  height: 350px;
+  height: 400px;
   overflow-y: scroll !important;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: 0 !important;
 }
