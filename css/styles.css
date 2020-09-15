@@ -20,10 +20,6 @@ background-color: lavenderblush;
     border-radius: 1rem;
 }
 
-.no-collapse {
-  padding: 0.05px;
-}
-
 .chat-container{
   height: 200px;
   width: 100%;
