@@ -20,7 +20,7 @@ background-color: lavenderblush;
 }
 
 .chat-bg {
-  height: 95%;
+  height: 100%;
   overflow-y: scroll !important;
   -webkit-overflow-scrolling: touch;
   z-index: 0 !important;
