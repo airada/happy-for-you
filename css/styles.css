@@ -21,10 +21,57 @@ background-color: lavenderblush;
 }
 
 .chat-container{
-  height: 200px;
+  height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+
+@media (max-width: 480px) {
+  .chat-container{
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 799px) {
+  .chat-container{
+    height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .chat-container{
+    height: 850px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .chat-container{
+    height: 1150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chat-container{
+    height: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+
+
 
 .chat-bg {
   height: 100%;
