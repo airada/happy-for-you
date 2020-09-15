@@ -50,10 +50,23 @@
 
     <div class="container">
         <div class="border-3 p-3 bg-white rounded shadow">
-            <div class="row bg-light m-3 chat-container" id="chat">
+            <div class="row bg-light m-3 chat-container d-flex align-items-end " id="chat">
                 <div id="chat_area" class="container "></div>
             </div>
+            <div class="row">
+                <div class="col-10 ml-3">
+                    <form id="chat_box" action="#!">
+                        <input type="text" id="send-on-enter" class="form-control form-rounded input-sm"
+                            placeholder="What did you do today?">
+                    </form>
+                </div>
+                <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-microphone fa-lg"></i>
+                </div>
+            </div> 
         </div>
+        
+
             
       </div>
 
