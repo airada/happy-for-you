@@ -21,13 +21,63 @@ background-color: lavenderblush;
 }
 
 .chat-container{
-  height: 300px;
+  height: 200px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
+.chat-bg {
+  height: 100%;
+  
+}
 
-@media (max-width: 480px) {
+.textbox-container {
+ max-height: 10vh;
+}
+
+.icon-size {
+  font-size: 3vw;
+}
+input.textbox {
+  height: 5vh;
+  max-height: 3vmax;
+  width: 100%;
+}
+
+.bg-chatbot {
+  background-color: #c2bbc4;
+}
+
+.bg-user {
+  background-color:rgb(185, 165, 204);
+}
+
+.size-custom {
+  max-width: 75% !important; /* or 950px */
+  min-height: 20px
+}
+
+.top-bar {
+  height: 3vh;
+}
+
+#footer-bottom {
+  height: 53px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+  width: 940px;
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .chat-container{
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
   .chat-container{
     height: 350px;
     overflow-y: scroll;
@@ -35,9 +85,17 @@ background-color: lavenderblush;
   }
 }
 
-@media (min-width: 481px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 600px) {
   .chat-container{
-    height: 650px;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .chat-container{
+    height: 600px;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -73,44 +131,3 @@ background-color: lavenderblush;
 
 
 
-.chat-bg {
-  height: 100%;
-  
-}
-
-.textbox-container {
- max-height: 10vh;
-}
-
-.icon-size {
-  font-size: 3vw;
-}
-input.textbox {
-  height: 5vh;
-  max-height: 3vmax;
-  width: 100%;
-}
-
-.bg-chatbot {
-  background-color: #c2bbc4;
-}
-
-.bg-user {
-  background-color:rgb(185, 165, 204);
-}
-
-.mw-custom {
-  max-width: 75% !important; /* or 950px */
-}
-
-.top-bar {
-  height: 3vh;
-}
-
-#footer-bottom {
-  height: 53px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 40px;
-  width: 940px;
-}
