@@ -20,6 +20,10 @@ background-color: lavenderblush;
     border-radius: 1rem;
 }
 
+.no-collapse {
+  padding: 0.05px;
+}
+
 .chat-container{
   height: 200px;
   flex-direction: row-reverse;
@@ -29,7 +33,6 @@ background-color: lavenderblush;
 
 .chat-bg {
   height: 100%;
-  
 }
 
 .textbox-container {
