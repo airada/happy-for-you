@@ -22,6 +22,7 @@ background-color: lavenderblush;
 
 .chat-container{
   height: 200px;
+  flex-direction: row-reverse;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -54,7 +55,6 @@ input.textbox {
 
 .size-custom {
   max-width: 75% !important; /* or 950px */
-  min-height: 100px;
 }
 
 .top-bar {
@@ -72,6 +72,7 @@ input.textbox {
 @media (min-width: 321px) and (max-width: 375px) {
   .chat-container{
     height: 250px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -80,6 +81,7 @@ input.textbox {
 @media (min-width: 376px) and (max-width: 480px) {
   .chat-container{
     height: 350px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -88,6 +90,7 @@ input.textbox {
 @media (min-width: 481px) and (max-width: 600px) {
   .chat-container{
     height: 450px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -96,6 +99,7 @@ input.textbox {
 @media (min-width: 601px) and (max-width: 799px) {
   .chat-container{
     height: 600px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -104,6 +108,7 @@ input.textbox {
 @media (min-width: 800px) and (max-width: 1024px) {
   .chat-container{
     height: 850px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -112,6 +117,7 @@ input.textbox {
 @media (min-width: 1025px) and (max-width: 1200px) {
   .chat-container{
     height: 1150px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -120,6 +126,7 @@ input.textbox {
 @media (min-width: 1200px) {
   .chat-container{
     height: 650px;
+    flex-direction: row-reverse;
     overflow-y: scroll;
     overflow-x: hidden;
   }
