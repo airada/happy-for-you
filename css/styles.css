@@ -4,7 +4,9 @@ html, body {
   position: fixed;
 }
 body {
-background-color: lavenderblush;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -115,7 +117,7 @@ input.textbox {
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   .chat-container{
-    height: 1150px;
+    height: 850px;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -124,7 +126,7 @@ input.textbox {
 
 @media (min-width: 1200px) {
   .chat-container{
-    height: 650px;
+    height: 500px;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
