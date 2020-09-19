@@ -9,14 +9,13 @@ function bot_reply(input, first_msg = false){
     let rowHTML = "";
 
     if (first_msg){
-        rowHTML += "<div class='row mt-auto mb-1'>";
+        rowHTML += "<div class='row mt-auto'>";
     } else {
-        rowHTML += "<div class='my-1'></div><div class='row my-1'>";
+        rowHTML += "<div class='row bg-danger'>";
     }
-    rowHTML += "<div class='col-12 pl-0 d-flex align-items-center justify-content-start text-center'>" +
-    "<div class='px-2'><img src='./img/chatbot.png' alt'...' class='rounded-circle'></div>"+
-    "<p class='p-2 size-custom rounded text-white bg-chatbot'>" + input + "</p></div></div>"+
-    "<div class='my-1'></div>";
+    rowHTML += "<div class='col-12 bg-warning pl-0 py-1 d-flex align-items-center justify-content-start text-center'>" +
+    "<img src='./img/chatbot.png' alt'...' class='rounded-circle px-2'>"+
+    "<p class='mt-2 p-2 size-custom rounded text-white bg-chatbot'>" + input + "</p></div></div>";
     chat_area.append(rowHTML);
 }
 
@@ -25,11 +24,11 @@ function user_reply(input){
 
     let rowHTML = "";
 
-    rowHTML += "<div class='my-1 '></div><div class='row my-1'>" +
-        "<div class='col-12 pr-0 d-flex align-items-center justify-content-end text-center'>" +
-        "<p class='p-2 size-custom rounded text-white bg-user'>" + input + "</p>" +
-        "<div class='px-2'><img src='./img/user.png' alt'...' class='rounded-circle'></div></div></div>" +
-        "<div class='my-1'></div>";
+    rowHTML += "<div class='row bg-primary'>" +
+        "<div class='col-12 bg-secondary pr-0 py-1 d-flex align-items-center justify-content-end text-center'>" +
+        "<p class='mt-2 p-2 size-custom rounded text-white bg-user'>" + input + "</p>" +
+        "<img src='./img/user.png' alt'...' class='rounded-circle px-2'></div></div>";
+
     chat_area.append(rowHTML);
 
     bot_reply("yay!");
