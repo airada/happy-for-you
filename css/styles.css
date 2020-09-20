@@ -62,6 +62,11 @@ input.textbox {
   height: 3vh;
 }
 
+.msg-height {
+  min-height: 75px;
+  position: static;
+} 
+
 #footer-bottom {
   height: 53px;
   margin: 0 auto;
