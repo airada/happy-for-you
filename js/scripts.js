@@ -9,7 +9,7 @@ function bot_reply(input, first_msg = false){
     let rowHTML = "";
 
     if (first_msg){
-        rowHTML += "<div class='row p-1 mt-auto'>";
+        rowHTML += "<div class='row p-1 mt-auto mb-1'>";
     } else {
         rowHTML += "<div class='row p-1 my-1'>";
     }
