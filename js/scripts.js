@@ -12,7 +12,7 @@ function bot_reply(input, first_msg = false){
         rowHTML += "<div class='row p-1 my-1 mx-2 mr-1 bg-secondary d-flex align-items-center justify-content-start text-center'>";
     }
     rowHTML += 
-    "<img src='./img/chatbot.png' alt'...' class='p-2 m-1 bg-warning'>"+
+    // "<img src='./img/chatbot.png' alt'...' class='p-2 m-1 bg-warning'>"+
     "<p class='my-auto mx-1 p-2 bg-danger size-custom rounded text-white bg-chatbot'>" + input + "</p></div>";
     chat_area.append(rowHTML);
 }
@@ -23,8 +23,9 @@ function user_reply(input){
     let rowHTML = "";
 
     rowHTML += "<div class='row p-1 my-1 mx-2 pl-auto bg-secondary d-flex align-items-center justify-content-end text-center'>" +
-        "<p class='mt-2 mb-1 p-2 size-custom rounded text-white bg-user'>" + input + "</p>" +
-        "<img src='./img/user.png' alt'...' class='p-2 m-1 bg-warning'></div></div>";
+        "<p class='mt-2 mb-1 p-2 ml-auto size-custom rounded text-white bg-user'>" + input + "</p>" +
+        // "<img src='./img/user.png' alt'...' class='p-2 m-1 bg-warning'>" 
+        "</div>";
 
     chat_area.append(rowHTML);
 
