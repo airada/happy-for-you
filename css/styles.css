@@ -1,6 +1,7 @@
 html, body {
   min-width: 100%;
   min-height: 100%;
+  position: fixed;
 }
 body {
   background-color: lavenderblush;
@@ -11,8 +12,22 @@ body {
     -o-background-size: cover; */
   }
 
+#window {
+  height: 85vh;
+}
+
+@media (max-width: 799px) {
+  #window {
+    height: 100vh;
+  }
+}
+
 .text-80 {
     font-size: 80%;
+}
+
+.msg-font {
+  font-size: 80%;
 }
 
 .form-rounded {
@@ -20,7 +35,7 @@ body {
 }
 
 .chat-container{
-  height: 200px;
+  height: 80%;
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -60,7 +75,7 @@ input.textbox {
 }
 
 .msg-height {
-  min-height: 65px;
+  min-height: 50px;
   flex-shrink: 0;
 } 
 
@@ -72,6 +87,7 @@ input.textbox {
   width: 940px;
 }
 
+/* 
 @media (min-width: 321px) and (max-width: 375px) {
   .chat-container{
     height: 250px;
@@ -140,4 +156,4 @@ input.textbox {
 
 
 
-
+ */

@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0 height=device-height, user-scalable=0" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, maximum-scale=1.0 height=device-height, user-scalable=0" />
     <title>Happy For You | Mimi AI</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font Awesome icons (free version)-->
@@ -20,51 +21,69 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-2 pb-0 shadow">
-        <div class="container text-80">
-            <a class="navbar-brand" href="#">Mimi AI</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+    <div class="d-md-none">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5 pb-0">
+            <div class="container text-80">
+                <a class="navbar-brand" href="#">Mimi AI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container border-3 pt-2 px-md-3 mb-0 mt-5 my-md-4 bg-white rounded shadow" id="window">
+
+        <div class="navbar-fixed-top container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container text-80">
+                    <a class="navbar-brand" href="#">Mimi AI</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="chat_area" class="mx-auto my-1 bg-light p-1 chat-container d-flex flex-column "></div>
+        <div class="row py-3">
+            <div class="col-10 ml-3 ">
+                <form id="chat_box" action="#!">
+                    <input type="text" id="send-on-enter" class="form-control form-rounded input-sm"
+                        placeholder="What did you do today?">
+                </form>
+            </div>
+            <div class="col-1 d-flex align-items-center justify-content-center">
+                <i class="fas fa-microphone fa-lg"></i>
             </div>
         </div>
-    </nav>
-
-    <div class="container border-3 pt-3 px-3 mb-0 bg-white rounded shadow ">
-            <div id="chat_area" class="mx-auto my-1 bg-light p-1 chat-container d-flex flex-column"></div>
-            <div class="row py-3">
-                <div class="col-10 ml-3">
-                    <form id="chat_box" action="#!">
-                        <input type="text" id="send-on-enter" class="form-control form-rounded input-sm"
-                            placeholder="What did you do today?">
-                    </form>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-microphone fa-lg"></i>
-                </div>
-            </div> 
-        
-
-            
-      </div>
+    </div>
 
     <!-- Page Content -->
     <!-- <div class="container text-80">

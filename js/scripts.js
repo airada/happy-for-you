@@ -6,15 +6,17 @@ function bot_reply(input, first_msg = false){
 
     let rowHTML = "";
 
-    if (first_msg){
-        rowHTML += "<div class='row p-1 mt-auto mb-1 mx-2 pr-auto mr-1 msg-height d-flex align-items-center justify-content-start text-center'>";
-    } else {
-        rowHTML += "<div class='row msg-height p-1 my-1 mx-2 mr-1 d-flex align-items-center justify-content-start text-center'>";
-    }
-    rowHTML += 
-    "<img src='./img/chatbot.png' alt'...' class='p-2 m-1'>"+
-    "<p class='my-auto mx-1 p-2 size-custom rounded text-white bg-chatbot'>" + input + "</p></div>";
+    rowHTML += "<div class='row msg-height p-1 m-1 d-flex align-items-center justify-content-start text-center' id='chatbot'>" +
+                    "<img src='./img/chatbot.png' alt'...' class='p-1 m-1'>" +
+                    "<p class='size-custom msg-font p-2 my-auto mx-1 text-white bg-chatbot rounded'>" + input + "</p>" +
+                "</div>";
+
     chat_area.append(rowHTML);
+
+    if(first_msg) {
+        $('#chatbot').addClass('mt-auto');
+    }
+
 }
 
 function user_reply(input){
@@ -22,9 +24,10 @@ function user_reply(input){
 
     let rowHTML = "";
 
-    rowHTML += "<div class='row msg-height p-1 my-1 mx-2 pl-auto d-flex align-items-center justify-content-end text-center'>" +
-        "<p class='mt-2 mb-1 p-2 ml-auto size-custom rounded text-white bg-user'>" + input + "</p>" +
-        "<img src='./img/user.png' alt'...' class='p-2 m-1'></div>";
+    rowHTML += "<div class='row msg-height p-1 m-1 d-flex align-items-center justify-content-end text-center'>" +
+                    "<p class='size-custom msg-font p-2 my-auto mx-1 text-white bg-user rounded'>" + input + "</p>" +
+                    "<img src='./img/user.png' alt'...' class='p-1 m-1'>" +
+                "</div>";
 
     chat_area.append(rowHTML);
 
