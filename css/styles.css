@@ -1,9 +1,9 @@
 html, body {
   min-width: 100%;
   min-height: 100%;
-  position: fixed;
 }
 body {
+  position: relative;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -12,13 +12,9 @@ body {
     -o-background-size: cover; */
   }
 
-#window {
-  height: 85vh;
-}
-
-@media (max-width: 799px) {
+@media only screen and (max-width: 799px) {
   #window {
-    height: 100vh;
+    height: 75vh;
   }
 }
 
@@ -35,10 +31,24 @@ body {
 }
 
 .chat-container{
-  height: 80%;
+  height: 70vh;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 799px) {
+  .chat-container{
+    height: 70vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.textbox-fixed {
+  position: fixed;
+  bottom: 0;
 }
 
 .chat-bg {

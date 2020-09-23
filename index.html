@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="body">
 
 <head>
     <meta charset="utf-8">
@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
-<body>
+<body >
     <div class="d-md-none">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5 pb-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5 pb-2">
             <div class="container text-80">
                 <a class="navbar-brand" href="#">Mimi AI</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -47,7 +47,7 @@
 
     <div class="container border-3 pt-2 px-md-3 mb-0 mt-5 my-md-4 bg-white rounded shadow" id="window">
 
-        <div class="navbar-fixed-top container">
+        <div class="d-none d-md-block navbar-fixed-top container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container text-80">
                     <a class="navbar-brand" href="#">Mimi AI</a>
@@ -72,10 +72,27 @@
         </div>
 
         <div id="chat_area" class="mx-auto my-1 bg-light p-1 chat-container d-flex flex-column "></div>
+        <div class="d-none d-md-block">
+            <div class="row py-3">
+                <div class="col-10 ml-3 ">
+                    <form class="chat_box" action="#!">
+                        <input type="text" class="form-control form-rounded input-sm send-on-enter"
+                            placeholder="What did you do today?">
+                    </form>
+                </div>
+                <div class="col-1 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-microphone fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container bg-white textbox-fixed d-md-none">
         <div class="row py-3">
             <div class="col-10 ml-3 ">
-                <form id="chat_box" action="#!">
-                    <input type="text" id="send-on-enter" class="form-control form-rounded input-sm"
+                <form id="chat_box_mobile" action="#!">
+                    <input type="text" id="send-on-enter-mobile" class="form-control form-rounded input-sm"
                         placeholder="What did you do today?">
                 </form>
             </div>

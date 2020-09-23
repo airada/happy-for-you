@@ -1,5 +1,6 @@
 let user_input = "";
 let chat_box =  $('#chat_box');
+let chat_box_mobile =  $('#chat_box_mobile');
 
 function bot_reply(input, first_msg = false){
     let chat_area = jQuery("#chat_area");
@@ -34,6 +35,8 @@ function user_reply(input){
     bot_reply("yay!");
     var objDiv = document.getElementById("chat_area");
     objDiv.scrollTop = objDiv.scrollHeight;
+    // var objDivWindow = document.getElementById("body");
+    // objDiv.scrollTop = objDivWindow.scrollHeight;
 }
 
 function onSubmit(chatbox){
@@ -43,6 +46,22 @@ function onSubmit(chatbox){
     user_reply(user_input);
 }
 
+function onSubmitMobile(chatbox){
+    chatbox.preventDefault();
+    user_input = $("#send-on-enter-mobile").val();
+    chat_box_mobile[0].reset();
+    user_reply(user_input);
+}
+
 bot_reply("Hello! What's up?", true);
 
+// $( "input" ).focus(function() {
+//     var objDivWindow = document.getElementById("body");
+//     objDivWindow.scrollTop = window.innerHeight;
+//   }).blur(function() {
+//     var objDivWindow = document.getElementById("body");
+//     objDivWindow.scrollTop = window.innerHeight;
+//   });
+
 chat_box.submit(onSubmit);
+chat_box_mobile.submit(onSubmitMobile);
