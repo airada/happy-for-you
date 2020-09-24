@@ -65,3 +65,4 @@ bot_reply("Hello! What's up?", true);
 
 chat_box.submit(onSubmit);
 chat_box_mobile.submit(onSubmitMobile);
+console.log("recent push");
