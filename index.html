@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="body">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -20,34 +20,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
-<body class="fixed-top">
-    <div class="d-md-none">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5 pb-2">
-            <div class="container text-80">
-                <a class="navbar-brand" href="#">Mimi AI</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                    </ul>
-                </div>
+<body>
+    <nav class="navbar-mobile navbar navbar-expand-lg navbar-light fixed-top bg-white pb-2">
+        <div class="container text-80">
+            <a class="navbar-brand" href="#">Mimi AI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav> 
 
-    <div class="container border-3 pt-2 px-md-3 mb-0 mt-5 my-md-4 bg-white rounded shadow" id="window">
-
-        <div class="d-none d-md-block navbar-fixed-top container">
+    <div class="godown-60" id="godown"></div>
+   
+    <div class="container d-none d-md-block border-3 pt-2 px-md-3 mb-0 mt-5 my-md-4 bg-white rounded shadow" id="window">
+        <div class="navbar-fixed-top container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container text-80">
                     <a class="navbar-brand" href="#">Mimi AI</a>
@@ -88,10 +87,33 @@
         
     </div>
 
-    <div class="container bg-white textbox-fixed d-md-none">
-        <div class="row py-3">
-            <div class="col-10 ml-3 ">
-                <form id="chat_box_mobile" action="#!">
+    
+    <div id="window" class="container bg-white fixed-bottom d-flex flex-column">
+        <div class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container text-80">
+                <a class="navbar-brand" href="#">Mimi AI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="chat_area_mobile" class="bg-light chat-container d-flex flex-column "></div>
+        <div id="textbox-mobile" class="row p-3 bg-white">
+            <div class="col-10 ml-3">
+                <form id="chat_box_mobile">
                     <input type="text" id="send-on-enter-mobile" class="form-control form-rounded input-sm"
                         placeholder="What did you do today?">
                 </form>
@@ -102,61 +124,8 @@
         </div>
     </div>
 
-    <!-- Page Content -->
-    <!-- <div class="container text-80">
-        <div class="card border-0 mb-5 shadow">
-            <div class="card-body pt-1 mt-0">
-                <div class="row bg-light">
-                    <p class="top-bar"></p>
-                </div>
-                <div class="row ">
-
-                    <div class="col-lg-4 d-none d-lg-block">
-                        <h1 class="font-weight-light">Welcome!</h1>
-                    </div>
-                    <div class="col col-lg-8  chat-container">
-                        <div class="row bg-light chat-bg d-flex align-items-end" id="chat">
-                                <div id="chat_area" class="container "></div>
-                            </div>
-                        
-                         <div class="row bg-white p-1 rounded textbox-container d-flex align-items-center justify-content-center ">
-                            <div class="col-10">
-                                <form id="chat_box" action="#!">
-                                    <input type="text" id="send-on-enter" class="form-control form-rounded input-sm"
-                                        placeholder="What did you do today?">
-                                </form>
-                            </div>
-
-                            <div class="col-2">
-                                <i class="fas fa-microphone"></i>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <footer class="footer bg-dark mt-2 pt-2 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h4 class=" mb-4">Diving Deep into Learning</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/airada"><i class="fab fa-fw fa-github "
-                            style="color:#FFFFFF;"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://rninchan.itch.io/"><i class="fab fa-fw fa-itch-io "
-                            style="color:#FFFFFF;"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jasmineirada/"><i class="fab fa-fw fa-linkedin"
-                            style="color:#FFFFFF;"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="mailto:jasmineirada@gmail.com"><i class="fas fa-fw fa-envelope"
-                            style="color:#FFFFFF;"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- <div class="copyright d-none d-lg-block py-2 mt-2 text-center text-dark">
-        <div class="container"><small>Copyright © Jasmine Irada 2020</small></div>
-    </div> -->
+        
+    
 
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

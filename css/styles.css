@@ -5,6 +5,7 @@ html {
 body {
   height: 100%;
   width: 100%;
+  position: fixed;
   background-color: lavenderblush;
     /* background: url('img\pexels-sergey-chetvertnykh-880639.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -12,6 +13,17 @@ body {
     background-size: cover;
     -o-background-size: cover; */
   }
+
+.mobile {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#godown{
+  height: 60px;
+}
 
 @media only screen and (max-width: 799px) {
   #window {
@@ -40,16 +52,11 @@ body {
 
 @media only screen and (max-width: 799px) {
   .chat-container{
-    height: 85%;
+    height: 100%;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
   }
-}
-
-.textbox-fixed {
-  position: fixed;
-  bottom: 0;
 }
 
 .chat-bg {
