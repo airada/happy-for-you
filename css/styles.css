@@ -14,12 +14,11 @@ body {
     -o-background-size: cover; */
   }
 
-.mobile {
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+  @media only screen and (max-width: 799px) {
+    #mobile {
+      height: 100%;
+    }
+  }
 
 #godown{
   height: 60px;

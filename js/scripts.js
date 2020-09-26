@@ -83,7 +83,7 @@ bot_reply("Hello! What's up?", true, true);
 //     objDivWindow.scrollTop = window.innerHeight;
 //   });
 // document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
-document.getElementById("window").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
+// document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
 
 
 $("#navMenu").resize(function () {
