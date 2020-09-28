@@ -76,21 +76,21 @@ bot_reply("Hello! What's up?", false, true);
 bot_reply("Hello! What's up?", true, true);
 
 // $( "input" ).focus(function() {
-//     var objDivWindow = document.getElementById("body");
+//     var objDivWindow = document.getElementById("html");
 //     objDivWindow.scrollTop = window.innerHeight;
 //   }).blur(function() {
-//     var objDivWindow = document.getElementById("body");
+//     var objDivWindow = document.getElementById("html");
 //     objDivWindow.scrollTop = window.innerHeight;
 //   });
 // document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
 // document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
 
 
-$("#navMenu").resize(function () {
-    $('#godown').height($("#navMenu").height() + 10);
-});
+// $("#navMenu").resize(function () {
+//     $('#godown').height($("#navMenu").height() + 10);
+// });
 
-if ($("#navMenu").height() > $('#godown').height()) $('#godown').height($("#navMenu").height() + 10);
+// if ($("#navMenu").height() > $('#godown').height()) $('#godown').height($("#navMenu").height() + 10);
 
 chat_box.submit(onSubmit);
 chat_box_mobile.submit(onSubmitMobile);
