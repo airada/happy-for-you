@@ -1,3 +1,12 @@
+<!--
+    |       HTML CLASS ORDERING
+    |       1. Containers, rows, cols
+    |       2. Display, flexbox, alignment
+    |       3. Padding, margins (t, r, b, l)
+    |       4. Borders, colors
+
+    ID: on the left
+-->
 <!doctype html>
 <html lang="en">
 
@@ -13,20 +22,21 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
-    <div id="window" class="container d-none d-md-block border-3 pt-2 px-md-3 mb-0 mt-5 my-md-4 bg-white rounded shadow" >
+    <!--------------------------- 
+        DESKTOP VERSION
+    ----------------------------->
+    <div id="window" class="container d-none d-md-block pt-2 px-md-3 mt-5 my-md-4 mb-0 border-3 rounded shadow bg-white" >
         <div class="navbar-fixed-top container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container text-80">
                     <a class="navbar-brand" href="#">Mimi AI</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -46,12 +56,15 @@
             </nav>
         </div>
 
-        <div id="chat_area" class="mx-auto my-1 bg-light p-2 chat-container d-flex flex-column "></div>
+        <!-- 
+            CHATBOT MESSAGING AREA 
+        -->
+        <div id="chat-area" class="chat-container d-flex flex-column p-2 mx-auto my-1 bg-light"></div>
         <div class="d-none d-md-block">
             <div class="row py-3">
-                <div class="col-10 ml-3 ">
-                    <form id="chat_box" action="#!">
-                        <input type="text" id="send-on-enter" class="form-control form-rounded input-sm "
+                <div class="col-10 ml-3">
+                    <form id="chat-box" action="#!">
+                        <input type="text" id="send-on-enter" class="form-control form-rounded"
                             placeholder="What did you do today?">
                     </form>
                 </div>
@@ -63,8 +76,10 @@
         
     </div>
 
-    
-    <div id="mobile" class="d-md-none container bg-white fixed-bottom d-flex flex-column">
+    <!--------------------------- 
+        MOBILE VERSION
+    ----------------------------->    
+    <div id="mobile" class="container d-md-none d-flex flex-column fixed-bottom bg-white">
         <div class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container text-80">
                 <a class="navbar-brand" href="#">Mimi AI</a>
@@ -86,10 +101,14 @@
                 </div>
             </div>
         </div>
-        <div id="chat_area_mobile" class="bg-light chat-container d-flex flex-column "></div>
+        
+        <!-- 
+            CHATBOT MESSAGING AREA 
+        -->
+        <div id="chat-area-mobile" class="chat-container d-flex flex-column bg-light"></div>
         <div id="textbox-mobile" class="row p-3 bg-white">
             <div class="col-10 ml-3">
-                <form id="chat_box_mobile">
+                <form id="chat-box-mobile">
                     <input type="text" id="send-on-enter-mobile" class="form-control form-rounded input-sm"
                         placeholder="What did you do today?">
                 </form>
@@ -111,10 +130,6 @@
     <!-- Contact form JS-->
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
