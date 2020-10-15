@@ -7,7 +7,7 @@ function bot_reply(input, chat_area_id = "chat-area", first_msg = false){
 
     var rowHTML = "";
     rowHTML += "<div class='chatbot row d-flex align-items-center justify-content-start msg-height p-1 m-1 text-center'>" +
-                    "<img src='./img/chatbot.png' alt'...' class='p-1 m-1'>" +
+                    "<img src='./img/chatbot.png' alt='chatbot-pfp' class='p-1 m-1'>" +
                     "<p class='size-custom text-80 p-2 my-auto mx-1 text-white bg-chatbot rounded'>" + input + "</p>" +
                 "</div>";
 
@@ -25,7 +25,7 @@ function user_reply(input, chat_area_id = "chat-area"){
 
     rowHTML += "<div class='row msg-height p-1 m-1 d-flex align-items-center justify-content-end text-center'>" +
                     "<p class='size-custom text-80 p-2 my-auto mx-1 text-white bg-user rounded'>" + input + "</p>" +
-                    "<img src='./img/user.png' alt'...' class='p-1 m-1'>" +
+                    "<img src='./img/user.png' alt='user-pfp' class='p-1 m-1'>" +
                 "</div>";
 
     chat_area.append(rowHTML);
@@ -34,44 +34,24 @@ function user_reply(input, chat_area_id = "chat-area"){
 
     var objDiv = document.getElementById(chat_area_id);
     objDiv.scrollTop = objDiv.scrollHeight;
-
-    // var objDivWindow = document.getElementById("body");
-    // objDiv.scrollTop = objDivWindow.scrollHeight;
 }
 
 function onSubmit(chatbox){
     chatbox.preventDefault();
-    user_input = $("#send-on-enter").val();
+    user_input = $("#message-textbox").val();
     chat_box[0].reset();
     user_reply(user_input, "chat-area");
 }
 
 function onSubmitMobile(chatbox){
     chatbox.preventDefault();
-    user_input = $("#send-on-enter-mobile").val();
+    user_input = $("#message-textbox-mobile").val();
     chat_box_mobile[0].reset();
     user_reply(user_input, "chat-area-mobile");
 }
 
 bot_reply("Hello! What's up?", "chat-area", true);
 bot_reply("Hello! What's up?", "chat-area-mobile", true);
-
-// $( "input" ).focus(function() {
-//     var objDivWindow = document.getElementById("html");
-//     objDivWindow.scrollTop = window.innerHeight;
-//   }).blur(function() {
-//     var objDivWindow = document.getElementById("html");
-//     objDivWindow.scrollTop = window.innerHeight;
-//   });
-// document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
-// document.getElementById("mobile").style.height = ($(window).height() - $("#textbox-mobile").outerHeight()) + "px";
-
-
-// $("#navMenu").resize(function () {
-//     $('#godown').height($("#navMenu").height() + 10);
-// });
-
-// if ($("#navMenu").height() > $('#godown').height()) $('#godown').height($("#navMenu").height() + 10);
 
 chat_box.submit(onSubmit);
 chat_box_mobile.submit(onSubmitMobile);
