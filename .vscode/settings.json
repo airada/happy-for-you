@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "C:\\Users\\jasmi\\anaconda3\\envs\\vscode\\python.exe"
+    "python.pythonPath": "C:\\Users\\jasmi\\anaconda3\\envs\\vscode\\python.exe",
+    "cSpell.ignoreWords": [
+        "nltk",
+        "torch"
+    ]
 }
