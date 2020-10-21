@@ -2,6 +2,15 @@ import random, json, torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
+kaomoji = [
+    "(* ^ ω ^)", "(´ ∀ ` *)", "٩(◕‿◕｡)۶", "☆*:.｡.o(≧▽≦)o.｡.:*☆","(o^▽^o)","(⌒▽⌒)☆","<(￣︶￣)>","。.:☆*:･'(*⌒―⌒*)))"
+"ヽ(・∀・)ﾉ", "(´｡• ω •｡`)", "(￣ω￣)", "｀;:゛;｀;･(°ε° )", "(o･ω･o)", "(＠＾◡＾)", "ヽ(*・ω・)ﾉ", "(^人^)", "(o´▽`o)",
+"(*´▽`*)", "｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡", "( ´ ω ` )", "(((o(*°▽°*)o)))", "(≧◡≦)", "(o´∀`o)", "(´• ω •`)", "(＾▽＾)", "(⌒ω⌒)", "╰(▔∀▔)╯",
+"ヽ(o^ ^o)ﾉ", "(✯◡✯)", "(◕‿◕)", "(*≧ω≦*)", "(☆▽☆)", "(⌒‿⌒)", "＼(≧▽≦)／", "ヽ(o＾▽＾o)ノ",
+"☆ ～('▽^人)", "٩(｡•́‿•̀｡)۶", "(✧ω✧)", "ヽ(*⌒▽⌒*)ﾉ", "(´｡• ᵕ •｡`)", "( ´ ▽ ` )", "╰(*´︶`*)╯", "ヽ(>∀<☆)ノ","o(≧▽≦)o",
+"(☆ω☆)", "(っ˘ω˘ς )", "(*¯︶¯*)", "＼(＾▽＾)／", "٩(◕‿◕)۶", "(o˘◡˘o)", "\(★ω★)/", "\(^ヮ^)/", "(〃＾▽＾〃)", "(╯✧▽✧)╯",
+"o(>ω<)o", "o( ❛ᴗ❛ )o", "(ﾉ´ヮ`)ﾉ*: ･ﾟ","(b ᵔ▽ᵔ)b","(๑˃ᴗ˂)ﻭ","(๑˘︶˘๑)","( ˙꒳​˙ )","°˖✧◝(⁰▿⁰)◜✧˖°","(´･ᴗ･ ` )","(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+"(„• ֊ •„)","(.❛ ᴗ ❛.)","(⁀ᗢ⁀)"]
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('chatbot/intents.json', 'r') as f:
@@ -23,7 +32,8 @@ model.eval()
 
 bot_name = "Mimi"
 print("Hello! type 'quit' to exit")
-while True:
+talk = True
+while talk:
     sentence = input("You: ")
     if sentence == "quit":
         break
@@ -44,6 +54,13 @@ while True:
     if prob.item() > 0.75:
         for intent in intents["intents"]:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                if tag == "inappropriate":
+                    print(f"{bot_name}: {random.choice(intent['responses'])} ヾ(`ヘ´)ﾉﾞ Bye!")
+                    talk = False
+                elif tag == "neg_task":
+                    print(f"{bot_name}: {random.choice(intent['responses'])} (っ๑˘︶˘๑ς)")
+                    print("How can I help?")
+                else:
+                    print(f"{bot_name}: {random.choice(intent['responses'])} {random.choice(kaomoji)}")
     else:
         print(f"{bot_name}: I do not understand...")
