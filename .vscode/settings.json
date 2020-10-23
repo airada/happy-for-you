@@ -3,5 +3,6 @@
     "cSpell.ignoreWords": [
         "nltk",
         "torch"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
