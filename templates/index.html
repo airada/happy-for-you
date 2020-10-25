@@ -24,7 +24,9 @@
         type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link type="text/css" rel="stylesheet" href="../static/css/styles.css">
+
 </head>
 
 <body>
@@ -63,9 +65,9 @@
         <div class="d-none d-md-block">
             <div class="row py-3">
                 <div class="col-10 ml-3">
-                    <form id="chat-box" action="#!">
+                    <form id="chat-box" action="http://localhost:5000/chat" method="GET">
                         <label for="message-textbox" class="d-none">Message: </label>
-                        <input type="text" id="message-textbox" class="form-control form-rounded"
+                        <input type="text" name="msg" id="message-textbox" class="form-control form-rounded"
                             placeholder="What did you do today?">
                     </form>
                 </div>
@@ -131,7 +133,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <!-- <script type="text/javascript" src="../static/scripts.js"></script> -->
+    <script>
+        var user_input = "";
+        var chat_box =  $('#chat-box');
+
+        function onSubmit(chatbox){
+            chatbox.preventDefault();
+            user_input = $("#message-textbox").val();
+            chat_box[0].reset();
+            botResponse(user_input)
+        }
+
+        
+        function botResponse(rawText) {
+            $.ajax({
+                type: "GET",
+                url: 'http://localhost:5000/chat?msg=',
+                data: rawText,
+                dataType : 'text',
+                crossDomain: true,
+                success: function(data, status, xhr) {
+                    console.log(data)
+                }
+            });
+
+            // $.get("http://localhost:5000/chat", { msg: rawText }).done(function (data) {
+            //         console.log(rawText);
+            //         console.log(data);
+            //     });
+        }
+
+         chat_box.submit(onSubmit);
+
+    </script>
 </body>
 
 </html>
