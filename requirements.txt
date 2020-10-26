@@ -16,8 +16,6 @@ joblib==0.17.0
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
-mkl-random==1.1.1
-mkl-service==2.3.0
 nltk==3.5
 numpy @ file:///C:/ci/numpy_and_numpy_base_1596215850360/work
 olefile==0.46
