@@ -17,9 +17,9 @@ lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
 nltk==3.5
-numpy @ file:///C:/ci/numpy_and_numpy_base_1596215850360/work
+numpy
 olefile==0.46
-Pillow @ file:///C:/ci/pillow_1602770972588/work
+Pillow
 pylint==2.4.4
 regex==2020.10.15
 six==1.14.0
