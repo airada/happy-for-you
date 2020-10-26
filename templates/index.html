@@ -65,7 +65,7 @@
         <div class="d-none d-md-block">
             <div class="row py-3">
                 <div class="col-10 ml-3">
-                    <form id="chat-box" action="http://localhost:5000/chat" method="GET">
+                    <form id="chat-box" action="index.html" method="GET">
                         <label for="message-textbox" class="d-none">Message: </label>
                         <input type="text" name="msg" id="message-textbox" class="form-control form-rounded"
                             placeholder="What did you do today?">
@@ -134,40 +134,7 @@
     <!-- Contact form JS-->
     <!-- Core theme JS-->
     <!-- <script src="js/scripts.js"></script> -->
-    <!-- <script type="text/javascript" src="../static/scripts.js"></script> -->
-    <script>
-        var user_input = "";
-        var chat_box =  $('#chat-box');
-
-        function onSubmit(chatbox){
-            chatbox.preventDefault();
-            user_input = $("#message-textbox").val();
-            chat_box[0].reset();
-            botResponse(user_input)
-        }
-
-        
-        function botResponse(rawText) {
-            $.ajax({
-                type: "GET",
-                url: 'http://localhost:5000/chat?msg=',
-                data: rawText,
-                dataType : 'text',
-                crossDomain: true,
-                success: function(data, status, xhr) {
-                    console.log(data)
-                }
-            });
-
-            // $.get("http://localhost:5000/chat", { msg: rawText }).done(function (data) {
-            //         console.log(rawText);
-            //         console.log(data);
-            //     });
-        }
-
-         chat_box.submit(onSubmit);
-
-    </script>
+    <script type="text/javascript" src="../static/scripts.js"></script>
 </body>
 
 </html>
