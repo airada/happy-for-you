@@ -7,7 +7,7 @@ function bot_reply(input, chat_area_id = "chat-area", first_msg = false){
 
     var rowHTML = "";
     rowHTML += "<div class='chatbot row d-flex align-items-center justify-content-start msg-height p-1 m-1 text-center'>" +
-                    "<img src='../img/chatbot.png' alt='chatbot-pfp' class='p-1 m-1'>" +
+                    "<img src='../static/img/chatbot.png' alt='chatbot-pfp' class='p-1 m-1'>" +
                     "<p class='size-custom text-80 p-2 my-auto mx-1 text-white bg-chatbot rounded'>" + input + "</p>" +
                 "</div>";
 
@@ -25,7 +25,7 @@ function user_reply(input, chat_area_id = "chat-area"){
 
     rowHTML += "<div class='row msg-height p-1 m-1 d-flex align-items-center justify-content-end text-center'>" +
                     "<p class='size-custom text-80 p-2 my-auto mx-1 text-white bg-user rounded'>" + input + "</p>" +
-                    "<img src='../img/user.png' alt='user-pfp' class='p-1 m-1'>" +
+                    "<img src='../static/img/user.png' alt='user-pfp' class='p-1 m-1'>" +
                 "</div>";
 
     chat_area.append(rowHTML);
