@@ -41,7 +41,7 @@ function botResponse(input) {
     jQuery.ajax({
         type: "GET",
         crossDomain:true,
-        url: "http://localhost/chat?msg="+encodeURIComponent(input),
+        url: "http://localhost:5000/chat?msg="+encodeURIComponent(input),
         dataType: "text",
         success: function(data, status, xhr) {
             console.log("Mimi: "+data)
