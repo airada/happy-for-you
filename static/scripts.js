@@ -41,6 +41,8 @@ function botResponse(input) {
         success: function(data, status, xhr) {
             console.log("Mimi: "+data)
             bot_reply(data, "chat-area");
+            var objDiv = document.getElementById("chat-area");
+            objDiv.scrollTop = objDiv.scrollHeight;
         }
     });
 }
@@ -51,8 +53,7 @@ function onSubmit(chatbox){
     chat_box[0].reset();
     user_reply(user_input, "chat-area");
     botResponse(user_input)
-    var objDiv = document.getElementById("chat-area");
-    objDiv.scrollTop = objDiv.scrollHeight;
+
 }
 
 
