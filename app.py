@@ -7,6 +7,8 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.static_folder = 'static'
 
+server = app.server
+
 @app.route('/success/<name>')
 def success(name):
     chatbot = Chatbot()
