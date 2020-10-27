@@ -29,11 +29,6 @@ function user_reply(input, chat_area_id = "chat-area"){
                 "</div>";
 
     chat_area.append(rowHTML);
-
-    
-
-    var objDiv = document.getElementById(chat_area_id);
-    objDiv.scrollTop = objDiv.scrollHeight;
 }
 
 function botResponse(input) {
@@ -56,6 +51,8 @@ function onSubmit(chatbox){
     chat_box[0].reset();
     user_reply(user_input, "chat-area");
     botResponse(user_input)
+    var objDiv = document.getElementById("chat-area");
+    objDiv.scrollTop = objDiv.scrollHeight;
 }
 
 
