@@ -31,7 +31,7 @@ function user_reply(input, chat_area_id = "chat-area"){
     chat_area.append(rowHTML);
 }
 
-function botResponse(input) {
+function botResponse(input, chat_area_id) {
     console.log("You: "+input)
     jQuery.ajax({
         type: "GET",
@@ -40,8 +40,8 @@ function botResponse(input) {
         dataType: "text",
         success: function(data, status, xhr) {
             console.log("Mimi: "+data)
-            bot_reply(data, "chat-area");
-            var objDiv = document.getElementById("chat-area");
+            bot_reply(data, chat_area_id);
+            var objDiv = document.getElementById(chat_area_id);
             objDiv.scrollTop = objDiv.scrollHeight;
         }
     });
@@ -52,7 +52,7 @@ function onSubmit(chatbox){
     user_input = $("#message-textbox").val();
     chat_box[0].reset();
     user_reply(user_input, "chat-area");
-    botResponse(user_input)
+    botResponse(user_input, "chat-area");
 
 }
 
@@ -62,6 +62,7 @@ function onSubmitMobile(chatbox){
     user_input = $("#message-textbox-mobile").val();
     chat_box_mobile[0].reset();
     user_reply(user_input, "chat-area-mobile");
+    botResponse(user_input, "chat-area-mobile");
 }
 
 bot_reply("Hello! What's up?", "chat-area", true);
