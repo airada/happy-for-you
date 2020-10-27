@@ -1,7 +1,7 @@
 from chatbot.chat import Chatbot
 from flask import Flask, render_template, request, redirect, url_for
 from flask_cors import CORS, cross_origin
-import logging
+import logging, sys
 
 app = Flask(__name__)
 cors = CORS(app)
