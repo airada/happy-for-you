@@ -13,7 +13,7 @@ kaomoji = [
 "(„• ֊ •„)","(.❛ ᴗ ❛.)","(⁀ᗢ⁀)"]
 
 class Chatbot:
-    device = torch.device('cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     with open('chatbot/intents.json', 'r') as f:
         intents = json.load(f)
