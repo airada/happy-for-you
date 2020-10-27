@@ -32,8 +32,6 @@ class Chatbot:
 
     def response(self, user_input):       
         sentence = user_input
-        if sentence == "quit":
-            return
 
         self.model.load_state_dict(self.model_state)
         self.model.eval()
@@ -55,8 +53,7 @@ class Chatbot:
             for intent in self.intents["intents"]:
                 if tag == intent["tag"]:
                     if tag == "inappropriate":
-                        return f"{random.choice(intent['responses'])} ヾ(`ヘ´)ﾉﾞ Bye!"
-                        return
+                        return f"{random.choice(intent['responses'])} ヾ(`ヘ´)ﾉﾞ"
                     elif tag == "neg_task":
                         return f"{random.choice(intent['responses'])} (っ๑˘︶˘๑ς) \n How can I help?"
                     else:
