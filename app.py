@@ -1,11 +1,14 @@
 from chatbot.chat import Chatbot
 from flask import Flask, render_template, request, redirect, url_for
 from flask_cors import CORS, cross_origin
+import logging
 
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.static_folder = 'static'
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 @app.route('/success/<name>')
 def success(name):
